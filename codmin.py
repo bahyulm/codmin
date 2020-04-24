@@ -1,6 +1,6 @@
-import vcl_lexer
-import vcl_parser
-import vcl_interp
+import codmin_lexer
+import codmin_parser
+import codmin_interp
 
 from sys import *
 
