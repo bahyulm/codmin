@@ -7,12 +7,12 @@ class BasicLexer(Lexer):
     literals = { '=', '+', '-', '/', '*', '(', ')', ',', ';' }
 
     # Define tokens
-    IF = r'IF'
-    THEN = r'THEN'
-    ELSE = r'ELSE'
-    FOR = r'FOR'
-    FUN = r'FUN'
-    TO = r'TO'
+    IF = r'JIKA'
+    THEN = r'MAKA'
+    ELSE = r'LAIN'
+    FOR = r'UNTUK'
+    FUN = r'FUNGSI'
+    TO = r'SAMPAI'
     ARROW = r'->'
     NAME = r'[a-zA-Z_][a-zA-Z0-9_]*'
     STRING = r'\".*?\"'
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     env = {}
     while True:
         try:
-            text = input('basic > ')
+            text = input('cod > ')
         except EOFError:
             break
         if text:
